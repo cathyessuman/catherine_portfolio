@@ -1,0 +1,22 @@
+/* Basic styling */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Ensure content is not hidden behind the sidebar */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+
+/* Add a left margin equal to sidebar width so main content is visible */
+#main {
+  margin-left: 120px;
+}
+
+/* On small screens, remove that margin */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- W3.CSS & fonts -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="w3-black">
+
+<!-- Sidebar for larger screens -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <img src="images/avatar.jpg" style="width:100%" alt="Your Photo">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#education" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-graduation-cap w3-xxlarge"></i>
+    <p>EDUCATION</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar for smaller screens -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#home" class="w3-bar-item w3-button" style="width:20%">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:20%">ABOUT</a>
+    <a href="#education" class="w3-bar-item w3-button" style="width:20%">EDUCATION</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:20%">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20%">CONTACT</a>
+  </div>
+</div>
+
+<!-- Main content wrapper -->
+<div class="w3-padding-large" id="main">
+
+  <!-- HOME Section -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Hello, I'm Catherine Nana Nyaah Essuman</h1>
+    <p>Data and Research Scientist</p>
+    <img src="images/hero.jpg" alt="Hero" class="w3-image" width="800" height="600" style="margin-top:16px">
+  </header>
+
+  <!-- ABOUT Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      I am a masters graduate of Mathematical Sciences (Artificial Intelligence for Science) 
+      from the African Institute of Mathematical Sciences (AIMS) in affiliation with the 
+      University of Cape Town. I had my undergraduate degree also in Mathematical Sciences 
+      (Statistics with Mathematics) from the University of Ghana. My studies are deeply 
+      rooted in the world of machine learning and AI, focusing on their applications in Science.
+    </p>
+    <p>
+      Previously, I worked as a data analyst and consultant, where I thrived in roles that 
+      allowed me to dive into research, analyse data, and build interactive dashboards. 
+      I also had the opportunity to manage client operations and office finances, 
+      which added a practical edge to my analytical skills.
+    </p>
+    <p>
+      My passion lies in becoming a data and research scientist, with a special focus on 
+      Natural Language Processing and AI in health. I am driven by the goal of harnessing 
+      data to create impactful, tailored solutions that meet individual needs.
+    </p>
+  </div>
+
+  <!-- EDUCATION Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="education">
+    <h2 class="w3-text-light-grey">Education</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-container">
+      <h3 class="w3-opacity"><b>University of Ghana</b></h3>
+      <h4 class="w3-text-light-grey">Bachelor of Science in Mathematical Sciences (2018 - 2022)</h4>
+      <p>
+        Majored in Statistics, with a minor in Mathematics. I held a position as the 
+        Deputy Women's Commissioner for the UG Mathematics Department.
+      </p>
+    </div>
+    <div class="w3-container w3-padding-top">
+      <h3 class="w3-opacity"><b>University of Cape Town (AIMS)</b></h3>
+      <h4 class="w3-text-light-grey">
+        Master of Science in Mathematical Sciences (AI for Science) (2024)
+      </h4>
+      <p>
+        Projects:<br>
+        • Recommender Systems using Matrix Factorization Techniques<br>
+        • Fine-Tuning a Language Model<br>
+        • Replicated a Renewal Equation to model South Korea COVID-19 Data in Numpyro
+      </p>
+    </div>
+  </div>
+
+  <!-- PROJECTS Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="projects">
+    <h2 class="w3-text-light-grey">Theses</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <img src="images/project1.jpg" alt="Project 1" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Story Generation Using Large Language Models for African Languages</h3>
+          <p class="w3-opacity">University of Cape Town (MSc.)</p>
+          <p>
+            Built text generation models from scratch in isiZulu and Yoruba—two low-resource 
+            languages—to generate children’s stories. This helps break the cycle of limited 
+            online textual data for these languages.
+          </p>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="images/project2.jpg" alt="Project 2" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Factors Influencing Purchases of Street Food & Non-Food Items in Accra</h3>
+          <p class="w3-opacity">University of Ghana (BSc.)</p>
+          <p>
+            Summarized key insights on consumer behavior and street vending, identifying 
+            major demographic and economic factors that influence purchasing decisions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+      <p>
+        <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+        Email: cathyessuman@gmail.com
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://www.linkedin.com/in/catherine-nana-nyaah-essuman/" class="w3-hover-opacity" target="_blank">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/cathyessuman" class="w3-hover-opacity" target="_blank">
+      <i class="fa fa-github"></i>
+    </a>
+  </footer>
+
+</div> <!-- End #main -->
+
+<!-- JS (optional, empty if you have no scripts now) -->
+<script src="about.js"></script>
+</body>
+</html>
